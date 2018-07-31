@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <title>Contact</title>
+
 </head>
+
 <body>
-    
+    <!--page header, includes navigation and hero image-->
+    <header class="clearfix">
+        <h1 class="logo">Delicious</h1>
+        <nav>
+            <ul class="navList">
+                <li>
+                    <a class="active" href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Recipes</a>
+                </li>
+                <li>
+                    <a href="#">Nutrition</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--section: hero -->
+    <section class="hero">
+        <img src="assets/contact-1.jpeg" alt="arial photo of three blueberry drinks in glasses with ice, lime and thyme">
+    </section>
+    <main>
+        <section class="contactForm">
+            <div class="wrapper">
+                <h1>Drop us a line</h1>
+                <form class="clearfix">
+                    <div class="fullName clearfix">
+                        <input type="text" placeholder="First name" class="firstName" name="firstName" id="firstName">
+                        <label class="visuallyhidden" for="firstName">First name</label>
+
+                        <input type="text" placeholder="Last name" class="lastName" name="lastName" id="lastName">
+                        <label class="visuallyhidden" for="lastName">Last name</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Subject" class="subject" name="subject" id="subject">
+                        <label class="visuallyhidden" for="subject">Subject</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Message" class="message" name="message" id="message">
+                        <label class="visuallyhidden" for="message">Message</label>
+                    </div>
+                    <div>
+                        <button type="submit" class="sendMessage" name="sendMessage" id="sendMessage">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <aside class="contactDetails">
+        <div class="wrapper">
+            <h2>Contact Details</h2>
+            <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula
+                pea tatsoi aubergine spring onion bush tomato kale.
+            </p>
+            <div class="workingHours">
+                <h3>Working Hours</h3>
+                <p>
+                    <span class="workingDays">MON - FRI : </span>
+                    <span class="hours"></span>08:00am - 05:30pm</span>
+                </p>
+                <p>Not working on Saturday and Sunday !</p>
+            </div>
+            <div class="contactInfo">
+                <h3>Contact Hours</h3>
+                <p>A delicious restaurant
+                    <br>Toronto, Ontario</p>
+                <p>yum@food.com </p>
+                <p>+1 234 567 8910</p>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <section class="footerMain clearfix">
+            <div class="wrapper">
+                <div class="footer fContact">
+                    <h2>Delicious</h2>
+                    <p>Soko radicchio bunya nuts gram dulse silver beet parnsip napa cabbage lotus root sea lettuce brussels
+                        sprout cabbage.
+                    </p>
+                    <p>A delicious restaurant
+                        <br>Toronto, Ontario</p>
+                    <p>yum@food.com</p>
+                    <p>+1 234 567 8910</p>
+                </div>
+                <div class="footer fRecent">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Beetroot waterspinach okra water</a>
+                        </li>
+                        <li>
+                            <a href="#">Chestnut ricebean pea catsear courgette</a>
+                        </li>
+                        <li>
+                            <a href="#">Summer purslane spinach arugula pea</a>
+                        </li>
+                        <li>
+                            <a href="#">Tatsoi aubergine spring onion bush</a>
+                        </li>
+                        <li>
+                            <a href="#">Tomato kale radicchio turnip chicory</a>
+                        </li>
+                        <li>
+                            <a href="#">Salsify pea sprouts fava bean</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer fSubscribe">
+                    <h3>Subscribe Now</h3>
+                    <p>Get all of our newest recipes immediately in</a> your inbox</p>
+                    <form>
+                        <input type="text" name="FirstName" placeholder="Enter your email">
+                        <button>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+
+                    </form>
+
+                    <div class="social">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footerLegal">
+            <div class="wrapper">
+                <p>Copyrights &copy; 2015 by
+                    <a href="#">POLAR</a>. All Rights Reserved.</p>
+            </div>
+        </section>
+    </footer>
+
 </body>
+
 </html>

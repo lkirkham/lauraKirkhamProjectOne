@@ -1,183 +1,451 @@
 /* General Styles */
 
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
 
-.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+audio,
+canvas,
+video {
+    display: inline-block;
+}
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
 
+[hidden] {
+    display: none;
+}
 
 html {
-    font-size: 62.5%
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
-body {
-    margin:0;
-    font-size: 1.6rem;
+a:focus {
+    outline: thin dotted;
 }
 
-.wrapper {
-    width: 60%;
-    margin: 0 auto;
+a:active,
+a:hover {
+    outline: 0;
 }
 
-.imageWrapper {
-    margin:0 auto;
+h1 {
+    font-size: 2em;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+q {
+    quotes: \201C \201D \2018 \2019;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -.5em;
+}
+
+sub {
+    bottom: -.25em;
 }
 
 img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+html input[type=button],
+/* 1 */
+
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body,
+figure {
+    margin: 0;
+}
+
+legend,
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: '';
+    clear: both;
+    height: 0;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+main {
+    position:relative;
     width:100%;
+}
+
+.wrapper {
+    width: 65%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display:block;
+}
+
+section {
+    width: 100%;
+    margin: 0;
+}
+
+.underline {
+    width: 70px;
+    background-color: #64a604;
+    height: 5px;
+    margin: 0px auto 40px;
+}
+
+h2{
+    font-family: 'Raleway', 'Arial', sans-serif;
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 28px 0;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    margin: 0;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    text-align: left;
+}
+
+
+
+p {
+    font-family: 'Lora', serif;
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.025rem;
+    color: rgb(153, 153, 153);
 }
 
 /* Header Styles */
 
 header {
     position: absolute;
-    top:0;
-    left:0;
-    display:inline-block;
-    width:100%;
-    padding: 0 20px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    padding-top: 50px;
+    padding: 50px 53px 0 53px;
+    z-index: 1;
 }
 
-.logo {
+h1.logo {
     text-transform: uppercase;
-    font-family: 'Raleway','Arial',sans-serif;
+    font-family: 'Raleway', 'Arial', sans-serif;
     color: #000000;
     font-size: 4.583rem;
     font-weight: 700;
     line-height: 0.524;
     text-align: left;
-    float:left;
-}
-
-.underline {
-    width:70px;
-    background-color:#64a604;
-    height:5px;
-    margin: 28px auto;
-
-}
-
-h2 {
-    font-family: 'Raleway','Arial', sans-serif;
-    color: #000000;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 2.4rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-p {
-    font-family: 'Lora', serif;
-    margin:0;
+    float: left;
+    margin: 0;
 }
 
 /* NAV */
+
 nav {
-    float:right;
+    float: right;
+    padding-top: 11px;
 }
 
-ul.navList {   
-    float:right;
-    display:inline-block;
+ul.navList {
+    float: right;
+
+    margin: 0;
 }
 
 .navList li {
     list-style: none;
-    float:left;
-    text-align:left;
-    padding: 20px 20px;
+    float: left;
+    text-align: left;
 }
 
 .navList li a {
     text-transform: uppercase;
-    list-style:none;
-    font-family: Raleway;
+    list-style: none;
+    font-family: 'Raleway', 'Arial', sans-serif;
     color: #000000;
-    font-size: 1.667rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    line-height: 2.4rem;
+    line-height: 0;
     text-align: left;
-    text-decoration:none;
+    text-decoration: none;
+    padding: 0 20px;
+    margin: 0;
 }
 
 .navList a.active {
-    color:#64a604;
+    color: #64a604;
+}
+
+.navList a:hover {
+    color: #64a604;
 }
 
 .hero {
-    clear:both;
+    clear: both;
+    max-height: 976px;
 }
+
 /* SECTION - POPULAR RECIPES */
-.popularRecipes {
-position:relative;
+
+/* .popularRecipes {
+    position: relative;
+    height:100%;
+} */
+
+.line {
+    position: relative;
+    height:100%;
 }
 
-.popularRecipes .half {
-    float:left;
-    width:50%;
+.half {
+    /* float: left; */
+    width: 50%;
+    position: relative;
+    height:100%;
 }
 
-.half.box1 {
-    text-align:center;
+
+/* POPULAR RECIPES SECTION - BOX 1 */
+
+.box1 {
+    text-align: center;
     margin: 0;
+    padding: 0;
+}
+
+.box1 .contentWrapper {
+    width: calc(100% - 30%);
+    margin: 0 15%;
+    position: absolute;
+    top:160px;
+}
+
+.popularRecipes button {
+    background-color: #64a604;
+    text-transform: uppercase;
+    padding: 17px 45px;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.rem;
+    text-align: center;
+    border: 3px solid transparent;
+    margin-top: 70px;
+}
+
+.popularRecipes button:hover {
+    background-color: #ffffff;
+    border: 3px solid #64a604;
+    color: #64a604;
+}
+
+
+.box2 {
+    float:right;
+}
+/* POPULAR RECIPES SECTION - BOX 3 */
+
+.box3 {
+    clear: both;
+    float: left;
+}
+
+/* POPULAR RECIPES SECTION - BOX 4 */
+
+.box4 {
+    float:right;
+    background-color: #f2f2f2;
     position:relative;
-    padding: 0;   
+    height:741.583px;
+    margin: 0;
+    padding: 0;
 }
 
-.half.box1 p {
-    margin: 30px; 0px;
-}
-
-button {
-background-color:#64a604;
-text-transform: uppercase;
-padding: 20px 48px;
-font-family: 'Raleway','Arial', sans-serif; 
-color: #ffffff;
-font-size: 1.4rem;
-font-weight: 700;
-line-height: 2.rem;
-text-align: center;
-}
-
-.half.box4 {
+.box4 .wrapper {
+    width: 80%;
+    margin:0 auto;
     position:relative;
-   
+    top:20%;
+
 }
 
 .recipeType {
-    width:calc(50% - 40px);
-    float:left;
-    position:relative;
-    margin: 0 20px;
+    float: left;
+    position: relative;
+    width: calc(50% - 40px);
+     margin: 0 0 50px 40px;
 }
 
-.recipeTypeWrapper {
+.recipeType:nth-child(odd) {
+    width: calc(50% - 60px);
+    margin: 0 20px 50px 40px;
+}
+
+
+.recipeType::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    color: #333;
+    font-size: 2.5rem;
     margin:0;
-}
-
-.recipeType h3 {
-    text-transform: uppercase;
-    font-family: 'Raleway', 'Arial', sans-serif;
-    margin:0;
-    font-size:1.8rem;
-    line-height:3.6rem;
-    text-align: left;
-}
-
-.recipeType::before{
-font-family: "Font Awesome 5 Free";
-font-weight: 900;
-position: absolute;
-color: #333;
-font-size: 3.6rem;
-left: -60px;
-top:5px;
-margin:0 10px;
-
+    left: -40px;
 }
 
 .recipeType:nth-child(1)::before {
@@ -206,15 +474,363 @@ margin:0 10px;
 
 /* SECTION - OUR RESTAURANT */
 
+.ourRestaurants {
+    width: 100%;
+    clear: both;
+    padding-top: 265px;
+    padding-bottom: 160px;
+}
+
+.ourRestaurants .wrapper {
+    position: relative;
+}
+
+.ourRestaurants .copyWrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 8%;
+    text-align: center;
+}
+
 .ourRestaurants .imgContainer:first-child {
-    width:15%;
+    width: 40%;
+    margin: 0 auto 50px;
+}
+
+.ourRestaurants .imgContainer:nth-child(2) {
+    width: 16%;
+    left: 60.5%;
+    top: -23%;
+    position: absolute;
+}
+
+.ourRestaurants .copyWrapper {
+    width: 70%;
+}
+
+/* SECTION - GALLERY */
+
+.imageGallery .imgContainer {
+    float: left;
+    width: 33.333%;
+    margin: 0;
+}
+
+/* SECTION - TESTIMONIAL */
+
+.testimonials {
+    clear: both;
+    background-color: rgb(221, 237, 154);
+    width:100%;
+    height:100%;
+}
+
+.testimonials .wrapper {
+    padding: 165px 0;
+}
+
+.testimonials h2 {
+    margin-top:0;
+}
+
+.testimonials blockquote {
+    padding: 0;
+    margin: 40px 0 100px 0;
+    position: relative;
+}
+
+.testimonials blockquote p {
+    font-size: 2.38rem;
+    font-style: italic;
+    line-height: 3.57rem;
+    text-align: center;
+    color: #000000;
+    padding: 0 80px;
+}
+
+.testimonials blockquote::before,
+.testimonials blockquote::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    color: #ffffff;
+    opacity: 0.7;
+    font-size: 3.6rem;
+    margin: 0px;
+}
+
+.testimonials blockquote::before {
+    content: "\f10d";
+    left: 0px;
+    top: -15px;
+}
+
+.testimonials blockquote::after {
+    content: "\f10e";
+    right: 0px;
+    bottom: 15px;
+}
+
+.testimonialControls {
+color: #fff;
+font-size: 3.6rem;
+margin: 0 auto;
+text-align:center;
+}
+
+.testimonialControls i{
+    padding: 0 10px;
+}
+
+/* FOOTER - GENERAL STYLES */
+
+footer {
+    margin: 0 auto;
     clear:both;
 }
 
-.ourRestaurants .imgContainer:nth-child(2){
-    width:60%;
-    margin:0 auto;
+.footerMain {
+    background-color: #2e2e2e;
+    padding-bottom: 105px;
+    padding-top: 120px;
 }
 
+.footer {
+    float: left;
+    width: 33.333%;
+}
 
+.footer h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    padding: 0 0 40px 0px
+}
 
+.footer ul {
+    padding:0;
+    margin:0;
+}
+
+/* FOOTER - PADDING/BORDER-BOTTOM */
+
+.footer p, .footer li,
+.footer form {
+    color: #999;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid #999;
+    font-family: "Lora", serif;
+    list-style: none;
+}
+
+.footer p:last-child,
+.fSubscribe p:first-of-type, .footer li:last-child {
+    padding: 1.6rem 0;
+    border-bottom: 0px;
+}
+
+/* FOOTER - CONTACT */
+
+.fContact p:nth-child(2) {
+    padding: 1.6rem 0 2.8rem 0;
+    border-bottom: 1px solid #999;
+}
+
+.fContact h2 {
+    color: #64a604;
+    text-align: left;
+    margin-top: 0;
+}
+
+.fContact {
+    padding-right: 60px;
+}
+
+/* FOOTER - RECENT POSTS */
+
+.fRecent {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.fRecent li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.fRecent li a:hover {
+    color: #64a604;
+}
+
+/* FOOTER - SUBSCRIBE/FORM */
+
+.fSubscribe {
+    padding-left: 60px;
+}
+
+.footer form {
+    padding-bottom: 3.0rem;
+}
+
+.footer input {
+    width: 221px;
+    height: 46px;
+    padding: 0 0 0 17px;
+    font-family: "Lora", serif;
+    color: #999;
+    font-style: italic;
+    font-size: 1.3rem;
+    background-color: #535353;
+    border: transparent;
+}
+
+.footer input:focus {
+    border: 3px solid #64a604;
+}
+
+footer button {
+    font-weight: solid;
+    width: 49px;
+    height: 46px;
+    background-color: #64a604;
+    border: 3px solid transparent;
+    position: absolute;
+}
+
+footer button:hover {
+    background-color: transparent;
+    border: 3px solid #64a604;
+}
+
+footer button i {
+    color: #fff;
+}
+
+/* FOOTER - SOCIAL */
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+    padding: 1.6rem 1.6rem 0 0;
+    color: #fff;
+}
+
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+    color: #64a604;
+}
+
+/* FOOTER - LEGAL */
+
+.footerLegal {
+    background-color: #252525;
+}
+
+.footerLegal p {
+    font-family: "Raleway", Arial, sans-serif;
+    color: #999999;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+}
+
+.footerLegal p a {
+    color: #64a604;
+    text-decoration: none;
+}
+
+/* ----------------------------------------- CONTACT ----------------------------------------- */
+.contactForm {
+    float:left;
+    width: 60%;
+}
+
+.contactForm h1 {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 28px 0;
+}
+
+.contactForm .wrapper {
+    float:right;
+}
+
+form {
+    text-align:center;
+}
+
+.firstName, .lastName {
+    width: 48%;
+    padding:15px;
+}
+
+.firstName {
+  float:left
+}
+
+.lastName {
+    float:right;
+}
+
+.fullName {
+margin-bottom:20px;
+}
+
+.subject, .message {
+    width:100%
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+aside {
+    float:right;
+    width:40%;
+    background-color:#f6f6f6;
+}
+.contactDetails .wrapper {
+    width:45%;
+    margin: 82px 0 72px 0;
+    padding-left:35px;
+}
+.contactDetails h2 {
+    text-align:left;
+    margin-bottom:60px;
+}
+
+.contactDetails h3 {
+margin-top:78px;
+ margin-bottom:25px;
+}
+
+.workingDays {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    color: #333333;
+    font-size:1.4rem;
+}
+
+.workingHours p:last-child{
+font-style: italic;
+}
+
+.contactInfo p:nth-child(2), .contactInfo p:last-child {
+    margin:20px 0;
+}
