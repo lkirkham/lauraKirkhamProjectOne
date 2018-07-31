@@ -903,7 +903,7 @@ p.recipeText:first-of-type {
     margin-top: 50px;
 }
 
-.recipe, .articleExtras {
+.recipe, .articleExtras, .relatedPosts, .comments {
     border-bottom: 1px solid rgba(204, 204, 204, 0.5);
 }
 
@@ -952,4 +952,59 @@ padding-left:10px;
 
 .authorBio h3 {
     margin-bottom:5px;
+}
+
+.relatedPosts {
+    width: calc(100% - 60px);
+}
+
+.admin, .category {
+    font-weight:700;
+}
+
+.authorTags {
+    font-family: 'Raleway','Arial', sans-serif;
+}
+
+/* .post .imgContainer {
+    max-width: 370px;
+} */
+
+
+.post h4 {
+     text-transform: uppercase;
+     font-family: 'Raleway', 'Arial', sans-serif;
+     margin: 0;
+     color: #000;
+     font-size: 1.8rem;
+     line-height: 3.6rem;
+     text-align: left;
+}
+
+.post {
+    float:left;
+}
+
+.post1, .post3 {
+        width:calc(33%-15px);
+}
+
+.post2 {
+            width:calc(33%-30px);
+}
+
+.post1 {
+margin: 0 15px 0 0;
+}
+
+.post2 {
+ margin: 0 15px;
+}
+
+.post3{
+margin: 0 0 0 15px;
+}
+
+.relatedPosts .imgContainer {
+    
 }
