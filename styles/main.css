@@ -211,8 +211,8 @@ body {
 }
 
 main {
-    position:relative;
-    width:100%;
+    position: relative;
+    width: 100%;
 }
 
 .wrapper {
@@ -223,12 +223,16 @@ main {
 img {
     width: 100%;
     height: auto;
-    display:block;
+    display: block;
 }
 
 section {
     width: 100%;
     margin: 0;
+}
+
+a {
+    text-decoration:none;
 }
 
 .underline {
@@ -238,7 +242,7 @@ section {
     margin: 0px auto 40px;
 }
 
-h2{
+h2 {
     font-family: 'Raleway', 'Arial', sans-serif;
     color: #000000;
     font-size: 3rem;
@@ -257,8 +261,6 @@ h3 {
     line-height: 3.6rem;
     text-align: left;
 }
-
-
 
 p {
     font-family: 'Lora', serif;
@@ -303,7 +305,6 @@ nav {
 
 ul.navList {
     float: right;
-
     margin: 0;
 }
 
@@ -349,16 +350,15 @@ ul.navList {
 
 .line {
     position: relative;
-    height:100%;
+    height: 100%;
 }
 
 .half {
     /* float: left; */
     width: 50%;
     position: relative;
-    height:100%;
+    height: 100%;
 }
-
 
 /* POPULAR RECIPES SECTION - BOX 1 */
 
@@ -372,7 +372,7 @@ ul.navList {
     width: calc(100% - 30%);
     margin: 0 15%;
     position: absolute;
-    top:160px;
+    top: 160px;
 }
 
 .popularRecipes button {
@@ -395,10 +395,10 @@ ul.navList {
     color: #64a604;
 }
 
-
 .box2 {
-    float:right;
+    float: right;
 }
+
 /* POPULAR RECIPES SECTION - BOX 3 */
 
 .box3 {
@@ -409,27 +409,26 @@ ul.navList {
 /* POPULAR RECIPES SECTION - BOX 4 */
 
 .box4 {
-    float:right;
+    float: right;
     background-color: #f2f2f2;
-    position:relative;
-    height:741.583px;
+    position: relative;
+    height: 741.583px;
     margin: 0;
     padding: 0;
 }
 
 .box4 .wrapper {
     width: 80%;
-    margin:0 auto;
-    position:relative;
-    top:20%;
-
+    margin: 0 auto;
+    position: relative;
+    top: 20%;
 }
 
 .recipeType {
     float: left;
     position: relative;
     width: calc(50% - 40px);
-     margin: 0 0 50px 40px;
+    margin: 0 0 50px 40px;
 }
 
 .recipeType:nth-child(odd) {
@@ -437,14 +436,13 @@ ul.navList {
     margin: 0 20px 50px 40px;
 }
 
-
 .recipeType::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     position: absolute;
     color: #333;
     font-size: 2.5rem;
-    margin:0;
+    margin: 0;
     left: -40px;
 }
 
@@ -521,8 +519,8 @@ ul.navList {
 .testimonials {
     clear: both;
     background-color: rgb(221, 237, 154);
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
 
 .testimonials .wrapper {
@@ -530,7 +528,7 @@ ul.navList {
 }
 
 .testimonials h2 {
-    margin-top:0;
+    margin-top: 0;
 }
 
 .testimonials blockquote {
@@ -572,13 +570,13 @@ ul.navList {
 }
 
 .testimonialControls {
-color: #fff;
-font-size: 3.6rem;
-margin: 0 auto;
-text-align:center;
+    color: #fff;
+    font-size: 3.6rem;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.testimonialControls i{
+.testimonialControls i {
     padding: 0 10px;
 }
 
@@ -586,7 +584,7 @@ text-align:center;
 
 footer {
     margin: 0 auto;
-    clear:both;
+    clear: both;
 }
 
 .footerMain {
@@ -609,13 +607,14 @@ footer {
 }
 
 .footer ul {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 /* FOOTER - PADDING/BORDER-BOTTOM */
 
-.footer p, .footer li,
+.footer p,
+.footer li,
 .footer form {
     color: #999;
     font-size: 1.3rem;
@@ -628,7 +627,8 @@ footer {
 }
 
 .footer p:last-child,
-.fSubscribe p:first-of-type, .footer li:last-child {
+.fSubscribe p:first-of-type,
+.footer li:last-child {
     padding: 1.6rem 0;
     border-bottom: 0px;
 }
@@ -748,7 +748,7 @@ footer button i {
 /* FORM */
 
 .contactForm {
-    float:left;
+    float: left;
     width: 60%;
 }
 
@@ -763,16 +763,17 @@ footer button i {
 }
 
 .contactForm .wrapper {
-    float:right;
+    float: right;
     margin: 82px 50px 0 0;
 }
 
-form input, form textarea {
-    padding:15px;
+form input,
+form textarea {
+    padding: 15px;
     font-family: "Lora", serif;
     color: #999;
     background-color: #f6f6f6;
-    border:3px solid transparent;
+    border: 3px solid transparent;
     resize: none;
 }
 
@@ -781,7 +782,8 @@ form textarea:focus {
     border: 3px solid #64a604;
 }
 
-.firstName, .lastName {
+.firstName,
+.lastName {
     width: 48%;
 }
 
@@ -793,32 +795,33 @@ form textarea:focus {
     float: right;
 }
 
-.subject, .message {
+.subject,
+.message {
     width: 100%
 }
 
-.fullName, .messageContainer {
-margin-bottom:20px;
+.fullName,
+.messageContainer {
+    margin-bottom: 20px;
 }
 
 .subjectContainer {
-    clear:both;
-    margin-bottom:20px;
+    clear: both;
+    margin-bottom: 20px;
 }
 
 button.sendMessage {
     border: none;
-    background-color:transparent;
-    text-align:left;
+    background-color: transparent;
+    text-align: left;
     color: #64a604;
-    font-family: "Raleway","Arial", sans-serif;
-    font-weight:700;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
-
 }
 
 button.sendMessage:hover {
-    color:#2e2e2e;
+    color: #2e2e2e;
 }
 
 .visuallyhidden:not(:focus):not(:active) {
@@ -837,45 +840,116 @@ button.sendMessage:hover {
 /* ASIDE */
 
 aside {
-    float:right;
-    width:40%;
-    background-color:#f6f6f6;
+    float: right;
+    width: 40%;
+    background-color: #f6f6f6;
 }
+
 .contactDetails .wrapper {
-    width:45%;
+    width: 45%;
     margin: 82px 0 72px 50px;
 }
+
 .contactDetails h2 {
-    text-align:left;
-    margin-bottom:60px;
+    text-align: left;
+    margin-bottom: 60px;
 }
 
 .contactDetails h3 {
-margin-top:50px;
- margin-bottom:15px;
+    margin-top: 50px;
+    margin-bottom: 15px;
 }
 
-.workingDays {
-    font-family: 'Raleway', 'Arial', sans-serif;
-    color: #333333;
-    font-size:1.4rem;
+.workingHours p:last-child {
+    font-style: italic;
 }
 
-.workingHours p:last-child{
-font-style: italic;
-}
-
-.contactInfo p:nth-child(2), .contactInfo p:last-child {
-    margin:20px 0;
+.contactInfo p:nth-child(2),
+.contactInfo p:last-child {
+    margin: 20px 0;
 }
 
 /* SECTION SECONDARY CONTACT IMAGE */
 
 .contactImage {
-    clear:both;
-    height:635px;
-    width:100%;
+    clear: both;
+    height: 635px;
+    width: 100%;
 }
 
-/* ----------------------------------------- BLOG ----------------------------------------- */
+/* ----------------------------------------- BLOG / ARTICLE ----------------------------------------- */
 
+.recipeTitle h1 {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.recipeTitle p {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    color: #000000;
+    margin:0;
+}
+
+p.recipeText {
+    font-family: 'Lora', serif;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+}
+
+p.recipeText:first-of-type {
+    margin-top: 50px;
+}
+
+.recipe, .articleExtras {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.articleExtras {
+    padding:25px 0;
+}
+
+.articleExtras p {
+    font-size:1.4rem;
+}
+
+.articleTags span, .articleSocial span, .workingDays {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    color: #333333;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.articleSocial a:first-of-type{
+padding-left:10px;
+}
+
+.articleSocial a i{
+    color: #999;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.aboutTheAuthor .imgContainer {
+    width:15%;
+    margin:50px 0;
+    float:left;
+}
+
+.authorBio {
+    background-color:#f6f6f6;
+    /* width: calc(85% - 50px); */
+    width: calc(85% - 30px);
+        height:100%;
+    float:right;
+    padding:50px 75px;
+    margin: 50px 0 50px 30px;
+    /* margin: 10% 25px; */
+}
+
+.authorBio h3 {
+    margin-bottom:5px;
+}
