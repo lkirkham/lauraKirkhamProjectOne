@@ -20,7 +20,7 @@
         <nav>
             <ul class="navList">
                 <li>
-                    <a class="active" href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="#">About</a>
@@ -32,13 +32,13 @@
                     <a href="#">Nutrition</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="article.htmls">Blog</a>
                 </li>
                 <li>
                     <a href="#">Shop</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a class="active" href="contact.html">Contact</a>
                 </li>
                 <li>
                     <a href="#">
@@ -69,16 +69,16 @@
                         <input type="text" placeholder="Last name" class="lastName" name="lastName" id="lastName">
                         <label class="visuallyhidden" for="lastName">Last name</label>
                     </div>
-                    <div>
+                    <div class="subjectContainer">
                         <input type="text" placeholder="Subject" class="subject" name="subject" id="subject">
                         <label class="visuallyhidden" for="subject">Subject</label>
                     </div>
-                    <div>
-                        <input type="text" placeholder="Message" class="message" name="message" id="message">
+                    <div class="messageContainer">
+                        <textarea name="message" class="message" placeholder="Message" id="message" cols="30" rows="12"></textarea>
                         <label class="visuallyhidden" for="message">Message</label>
                     </div>
                     <div>
-                        <button type="submit" class="sendMessage" name="sendMessage" id="sendMessage">Send Message</button>
+                        <button type="submit" class="sendMessage" name="sendMessage" id="sendMessage">Send Message <i class="fas fa-arrow-right"></i></button>
                     </div>
                 </form>
             </div>
@@ -107,6 +107,10 @@
             </div>
         </div>
     </aside>
+    <section class="contactImage">
+        <img src="assets/contact-2.jpeg" alt="dragon fruit">
+
+    </section>
     <footer>
         <section class="footerMain clearfix">
             <div class="wrapper">

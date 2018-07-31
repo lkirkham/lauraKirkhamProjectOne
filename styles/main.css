@@ -744,6 +744,9 @@ footer button i {
 }
 
 /* ----------------------------------------- CONTACT ----------------------------------------- */
+
+/* FORM */
+
 .contactForm {
     float:left;
     width: 60%;
@@ -754,38 +757,68 @@ footer button i {
     color: #000000;
     font-size: 3rem;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
-    margin: 28px 0;
+    margin: 0 0 60px 0;
 }
 
 .contactForm .wrapper {
     float:right;
+    margin: 82px 50px 0 0;
 }
 
-form {
-    text-align:center;
+form input, form textarea {
+    padding:15px;
+    font-family: "Lora", serif;
+    color: #999;
+    background-color: #f6f6f6;
+    border:3px solid transparent;
+    resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 3px solid #64a604;
 }
 
 .firstName, .lastName {
     width: 48%;
-    padding:15px;
 }
 
 .firstName {
-  float:left
+    float: left
 }
 
 .lastName {
-    float:right;
-}
-
-.fullName {
-margin-bottom:20px;
+    float: right;
 }
 
 .subject, .message {
-    width:100%
+    width: 100%
+}
+
+.fullName, .messageContainer {
+margin-bottom:20px;
+}
+
+.subjectContainer {
+    clear:both;
+    margin-bottom:20px;
+}
+
+button.sendMessage {
+    border: none;
+    background-color:transparent;
+    text-align:left;
+    color: #64a604;
+    font-family: "Raleway","Arial", sans-serif;
+    font-weight:700;
+    text-transform: uppercase;
+
+}
+
+button.sendMessage:hover {
+    color:#2e2e2e;
 }
 
 .visuallyhidden:not(:focus):not(:active) {
@@ -801,6 +834,8 @@ margin-bottom:20px;
     overflow: hidden;
 }
 
+/* ASIDE */
+
 aside {
     float:right;
     width:40%;
@@ -808,8 +843,7 @@ aside {
 }
 .contactDetails .wrapper {
     width:45%;
-    margin: 82px 0 72px 0;
-    padding-left:35px;
+    margin: 82px 0 72px 50px;
 }
 .contactDetails h2 {
     text-align:left;
@@ -817,8 +851,8 @@ aside {
 }
 
 .contactDetails h3 {
-margin-top:78px;
- margin-bottom:25px;
+margin-top:50px;
+ margin-bottom:15px;
 }
 
 .workingDays {
@@ -833,4 +867,12 @@ font-style: italic;
 
 .contactInfo p:nth-child(2), .contactInfo p:last-child {
     margin:20px 0;
+}
+
+/* SECTION SECONDARY CONTACT IMAGE */
+
+.contactImage {
+    clear:both;
+    height:635px;
+    width:100%;
 }
