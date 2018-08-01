@@ -273,6 +273,14 @@ p {
     color: rgb(153, 153, 153);
 }
 
+p a {
+    color: rgb(153, 153, 153);
+}
+
+p a:hover {
+    color: #64a604;
+}
+
 /* Header Styles */
 
 header {
@@ -765,6 +773,10 @@ footer button i {
 .contactForm .wrapper {
     float: right;
     margin: 82px 50px 0 0;
+}
+
+.contentInfo p a {
+    color: rgb(153, 153, 153);
 }
 
 form input,
