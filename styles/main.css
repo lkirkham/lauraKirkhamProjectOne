@@ -201,6 +201,8 @@ input::-moz-focus-inner {
     box-sizing: border-box;
 }
 
+/* GENERAL STYLES */
+
 html {
     font-size: 62.5%;
 }
@@ -328,9 +330,6 @@ ul.navList {
     margin: 0;
 }
 
-.navList a.active {
-    color: #64a604;
-}
 
 .navList a:hover {
     color: #64a604;
