@@ -232,7 +232,7 @@ section {
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .underline {
@@ -375,7 +375,8 @@ ul.navList {
     top: 160px;
 }
 
-.popularRecipes button {
+.popularRecipes button,
+.leaveComment button {
     background-color: #64a604;
     text-transform: uppercase;
     padding: 17px 45px;
@@ -890,7 +891,7 @@ aside {
 .recipeTitle p {
     font-family: 'Raleway', 'Arial', sans-serif;
     color: #000000;
-    margin:0;
+    margin: 0;
 }
 
 p.recipeText {
@@ -903,19 +904,25 @@ p.recipeText:first-of-type {
     margin-top: 50px;
 }
 
-.recipe, .articleExtras, .relatedPosts, .comments {
+.recipe,
+.articleExtras,
+.aboutTheAuthor,
+.relatedPosts,
+.comments {
     border-bottom: 1px solid rgba(204, 204, 204, 0.5);
 }
 
 .articleExtras {
-    padding:25px 0;
+    padding: 25px 0;
 }
 
 .articleExtras p {
-    font-size:1.4rem;
+    font-size: 1.4rem;
 }
 
-.articleTags span, .articleSocial span, .workingDays {
+.articleTags span,
+.articleSocial span,
+.workingDays {
     font-family: 'Raleway', 'Arial', sans-serif;
     color: #333333;
     font-weight: 700;
@@ -923,88 +930,193 @@ p.recipeText:first-of-type {
     text-transform: uppercase;
 }
 
-.articleSocial a:first-of-type{
-padding-left:10px;
+.articleSocial a:first-of-type {
+    padding-left: 10px;
 }
 
-.articleSocial a i{
+.articleSocial a i {
     color: #999;
     text-decoration: none;
     font-size: 1.4rem;
 }
 
 .aboutTheAuthor .imgContainer {
-    width:15%;
-    margin:50px 0;
-    float:left;
+    width: 15%;
+    margin: 50px 0;
+    float: left;
 }
 
 .authorBio {
-    background-color:#f6f6f6;
+    background-color: #f6f6f6;
     /* width: calc(85% - 50px); */
     width: calc(85% - 30px);
-        height:100%;
-    float:right;
-    padding:50px 75px;
+    height: 100%;
+    float: right;
+    padding: 50px 75px;
     margin: 50px 0 50px 30px;
     /* margin: 10% 25px; */
 }
 
 .authorBio h3 {
-    margin-bottom:5px;
+    margin-bottom: 5px;
+}
+
+.relatedPosts h3 {
+    margin-bottom: 50px;
 }
 
 .relatedPosts {
     width: calc(100% - 60px);
+    padding: 50px 0;
 }
 
-.admin, .category {
-    font-weight:700;
+.admin,
+.category {
+    font-weight: 700;
+}
+
+.admin:hover,
+.category:hover {
+    color: #64a604;
 }
 
 .authorTags {
-    font-family: 'Raleway','Arial', sans-serif;
+    font-family: 'Raleway', 'Arial', sans-serif;
 }
 
-/* .post .imgContainer {
-    max-width: 370px;
-} */
-
-
 .post h4 {
-     text-transform: uppercase;
-     font-family: 'Raleway', 'Arial', sans-serif;
-     margin: 0;
-     color: #000;
-     font-size: 1.8rem;
-     line-height: 3.6rem;
-     text-align: left;
+    text-transform: uppercase;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    margin: 0;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    text-align: left;
 }
 
 .post {
-    float:left;
+    float: left;
 }
 
-.post1, .post3 {
-        width:calc(33%-15px);
+.post1,
+.post3 {
+    width: calc(33%-15px);
 }
 
 .post2 {
-            width:calc(33%-30px);
+    width: calc(33%-30px);
+    margin: 0 15px;
 }
 
 .post1 {
-margin: 0 15px 0 0;
+    margin: 0 15px 0 0;
 }
 
-.post2 {
- margin: 0 15px;
+.post3 {
+    margin: 0 0 0 15px;
 }
 
-.post3{
-margin: 0 0 0 15px;
+.comments {
+    clear: both;
+    padding: 50px 0;
 }
 
-.relatedPosts .imgContainer {
-    
+.comments h3 .leaveComment h3 {
+    margin-bottom: 50px;
+}
+
+.comments .imgContainer {
+    width: 8%;
+    float: left;
+}
+
+.comment {
+    margin-top: 50px;
+}
+
+.commentCopy {
+    width: calc(92% - 50px);
+    background-color: #efefef;
+    color: #333;
+    padding: 30px;
+    float: right;
+    margin-left: 50px;
+}
+
+.commentCopy::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    color: #efefef;
+    font-size: 2.5rem;
+    margin: 0;
+    left: 476px;
+    content: "\f0d9";
+    z-index: 500;
+}
+
+.commenterName {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.jobTitle {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.timeStamp {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.comment2 {
+    margin-top: 50px;
+    clear: both;
+}
+
+.leaveComment {
+    margin-top: 50px;
+}
+
+.leaveComment p {
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.commentInputLine1 {
+    margin-bottom: 25px;
+}
+
+.commentInputLine1 .firstName,
+.commentInputLine1 .email,
+.commentInputLine1 .website {
+    width: calc(33.333% - 10px);
+    margin-right: 2px;
+    margin-left: 4px;
+}
+
+.commentInputLine1 .firstName {
+    margin-right: 2px;
+    margin-left: 0;
+}
+
+.commentInputLine1 .website {
+    margin-left: 2px;
+    margin-right: 0;
+}
+
+.leaveComment button {
+    margin-top: 10px;
+}
+
+.blog .wrapper {
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
