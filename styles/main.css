@@ -347,12 +347,30 @@ ul.navList {
     max-height: 976px;
 }
 
-/* SECTION - POPULAR RECIPES */
+.greenBubble {
+    position:relative;
+    left:25px;
+    top:-6px;
+    border-radius: 50%;
+    background-color: #64a604;
+    width:12px;
+    height:12px;
+    color:white;
+}
 
-/* .popularRecipes {
-    position: relative;
-    height:100%;
-} */
+.greenBubble2 {
+    position:relative;
+    color:white;
+    top:-8px;
+    left:3px;
+    font-family: 'Raleway',
+    'Arial',
+    sans-serif;
+    font-size: 1.1rem;
+}
+
+
+/* SECTION - POPULAR RECIPES */
 
 .line {
     position: relative;
@@ -591,7 +609,7 @@ ul.navList {
     color: rgba(255, 255, 255, 1);
 }
 
-/* FOOTER - GENERAL STYLES */
+/* FOOTER STYLES */
 
 footer {
     margin: 0 auto;
@@ -778,10 +796,6 @@ footer button i {
     margin: 82px 50px 0 0;
 }
 
-.contentInfo p a {
-    color: rgb(153, 153, 153);
-}
-
 form input,
 form textarea {
     padding: 15px;
@@ -877,6 +891,10 @@ aside {
 
 .workingHours p:last-child {
     font-style: italic;
+}
+
+.contentInfo p a {
+    color: rgb(153, 153, 153);
 }
 
 .contactInfo p:nth-child(2),
